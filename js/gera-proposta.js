@@ -17,10 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 scrollToStep(nextStep);
                 
                 // Track step progress
-                gtag('event', 'proposal_step', {
-                    'event_category': 'engagement',
-                    'event_label': `Step ${nextStepNum}`
-                });
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'proposal_step', {
+                        'event_category': 'engagement',
+                        'event_label': `Step ${nextStepNum}`
+                    });
+                }
             }
         });
     });
@@ -183,10 +185,12 @@ document.addEventListener('DOMContentLoaded', function() {
             // Simulate API call (in a real scenario, this would call your backend)
             setTimeout(() => {
                 // Track form completion
-                gtag('event', 'proposal_generated', {
-                    'event_category': 'conversion',
-                    'event_label': 'Proposal Generated'
-                });
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'proposal_generated', {
+                        'event_category': 'conversion',
+                        'event_label': 'Proposal Generated'
+                    });
+                }
                 
                 // Show success message and download options
                 alert('Sua proposta foi gerada com sucesso! Em breve você será redirecionado para a página de download.');
