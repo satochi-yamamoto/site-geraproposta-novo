@@ -17,10 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 scrollToStep(nextStep);
                 
                 // Track step progress
-                gtag('event', 'resume_step', {
-                    'event_category': 'engagement',
-                    'event_label': `Step ${nextStepNum}`
-                });
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'resume_step', {
+                        'event_category': 'engagement',
+                        'event_label': `Step ${nextStepNum}`
+                    });
+                }
             }
         });
     });
@@ -185,10 +187,12 @@ document.addEventListener('DOMContentLoaded', function() {
             // Simulate API call (in a real scenario, this would call your backend)
             setTimeout(() => {
                 // Track form completion
-                gtag('event', 'resume_generated', {
-                    'event_category': 'conversion',
-                    'event_label': 'Resume Generated'
-                });
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'resume_generated', {
+                        'event_category': 'conversion',
+                        'event_label': 'Resume Generated'
+                    });
+                }
                 
                 // Show success message and download options
                 alert('Seu currículo foi gerado com sucesso! Em breve você será redirecionado para a página de download.');
