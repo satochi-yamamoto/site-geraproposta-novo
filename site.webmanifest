@@ -1,16 +1,31 @@
 {
     "name": "Geradocumentos.com.br",
-    "short_name": "Geradocs",
-    "description": "Gere documentos profissionais automaticamente com nossa IA",
+    "short_name": "GeraDocumentos",
+    "description": "Gere documentos profissionais automaticamente com nossa IA. Crie currículos, propostas comerciais e políticas de privacidade em minutos.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4361ee",
+    "orientation": "portrait-primary",
     "icons": [
         {
             "src": "/favicon.ico",
-            "sizes": "32x32",
+            "sizes": "16x16 32x32 48x48",
             "type": "image/x-icon"
+        },
+        {
+            "src": "/images/logo-geradocumentos.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/logo-geradocumentos.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
-    ]
+    ],
+    "categories": ["business", "productivity", "utilities"],
+    "lang": "pt-BR",
+    "scope": "/",
+    "prefer_related_applications": false
 }
