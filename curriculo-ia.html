@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo IA - Gerador Automático de Currículos Profissionais | Geradocumentos.com.br</title>
+    <meta name="description" content="Crie seu currículo profissional em minutos com nossa IA. Gere um documento perfeito e aumente suas chances de conseguir o emprego dos sonhos.">
+    <meta name="keywords" content="gerador de currículo, currículo automático, criar currículo online, modelo de currículo, currículo profissional, IA para currículo">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../../index.html" class="logo">
+                <img src="../../images/logo-geradocumentos.png" alt="Geradocumentos.com.br" width="220">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="curriculo-ia.html" class="active">Currículo IA</a></li>
+                    <li><a href="../gera-proposta.html">Gera Proposta</a></li>
+                    <li><a href="../../index.html#como-funciona">Como Funciona</a></li>
+                    <li><a href="../../index.html#beneficios">Benefícios</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-button">Menu</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="tool-hero">
+            <div class="container">
+                <div class="tool-hero-content">
+                    <h1>Currículo IA</h1>
+                    <p class="subtitle">Crie um currículo profissional em minutos com ajuda da nossa Inteligência Artificial</p>
+                    <div class="tool-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">+10.000</span>
+                            <span class="stat-label">Currículos gerados</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">94%</span>
+                            <span class="stat-label">Taxa de satisfação</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5 min</span>
+                            <span class="stat-label">Tempo médio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-hero-image">
+                    <img src="../../images/resume-illustration.svg" alt="Criação de currículo com IA" width="500">
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <form id="resume-form">
+                        <div class="form-step active" data-step="1">
+                            <h2>Informações Pessoais</h2>
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cidade">Cidade/Estado</label>
+                                <input type="text" id="cidade" name="cidade" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="linkedin">LinkedIn (opcional)</label>
+                                <input type="url" id="linkedin" name="linkedin">
+                            </div>
+                            <div class="form-group">
+                                <label for="portfolio">Portfólio/Site (opcional)</label>
+                                <input type="url" id="portfolio" name="portfolio">
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-primary next-step" data-next="2">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="2">
+                            <h2>Objetivo Profissional</h2>
+                            <div class="form-group">
+                                <label for="objetivo">Descreva brevemente seu objetivo profissional</label>
+                                <textarea id="objetivo" name="objetivo" rows="4" required></textarea>
+                                <p class="form-hint">Exemplo: "Busco uma posição como Desenvolvedor Front-end onde possa aplicar minhas habilidades em HTML, CSS e JavaScript em projetos desafiadores."</p>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary prev-step" data-prev="1">Voltar</button>
+                                <button type="button" class="btn btn-primary next-step" data-next="3">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="3">
+                            <h2>Experiência Profissional</h2>
+                            <div id="experiencias-container">
+                                <div class="experiencia-item">
+                                    <div class="form-group">
+                                        <label for="empresa1">Empresa</label>
+                                        <input type="text" id="empresa1" name="experiencias[0][empresa]" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cargo1">Cargo</label>
+                                        <input type="text" id="cargo1" name="experiencias[0][cargo]" required>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="inicio1">Data de Início</label>
+                                            <input type="month" id="inicio1" name="experiencias[0][inicio]" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="fim1">Data de Término</label>
+                                            <input type="month" id="fim1" name="experiencias[0][fim]">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="descricao1">Descrição das Atividades</label>
+                                        <textarea id="descricao1" name="experiencias[0][descricao]" rows="3" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" id="add-experiencia" class="btn btn-small">+ Adicionar Experiência</button>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary prev-step" data-prev="2">Voltar</button>
+                                <button type="button" class="btn btn-primary next-step" data-next="4">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="4">
+                            <h2>Formação Acadêmica</h2>
+                            <div id="formacoes-container">
+                                <div class="formacao-item">
+                                    <div class="form-group">
+                                        <label for="instituicao1">Instituição de Ensino</label>
+                                        <input type="text" id="instituicao1" name="formacoes[0][instituicao]" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="curso1">Curso</label>
+                                        <input type="text" id="curso1" name="formacoes[0][curso]" required>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="inicio-formacao1">Data de Início</label>
+                                            <input type="month" id="inicio-formacao1" name="formacoes[0][inicio]" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="fim-formacao1">Data de Término</label>
+                                            <input type="month" id="fim-formacao1" name="formacoes[0][fim]">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" id="add-formacao" class="btn btn-small">+ Adicionar Formação</button>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary prev-step" data-prev="3">Voltar</button>
+                                <button type="button" class="btn btn-primary next-step" data-next="5">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="5">
+                            <h2>Habilidades e Competências</h2>
+                            <div class="form-group">
+                                <label>Selecione suas habilidades principais</label>
+                                <div class="skills-container">
+                                    <div class="skill-category">
+                                        <h3>Tecnologia</h3>
+                                        <div class="skills-list">
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="HTML5"> HTML5</label>
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="CSS3"> CSS3</label>
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="JavaScript"> JavaScript</label>
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="React"> React</label>
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="Node.js"> Node.js</label>
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="Python"> Python</label>
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="Git"> Git</label>
+                                        </div>
+                                    </div>
+                                    <div class="skill-category">
+                                        <h3>Idiomas</h3>
+                                        <div class="skills-list">
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="Inglês Intermediário"> Inglês Intermediário</label>
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="Inglês Avançado"> Inglês Avançado</label>
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="Espanhol Básico"> Espanhol Básico</label>
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="Espanhol Intermediário"> Espanhol Intermediário</label>
+                                        </div>
+                                    </div>
+                                    <div class="skill-category">
+                                        <h3>Soft Skills</h3>
+                                        <div class="skills-list">
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="Trabalho em equipe"> Trabalho em equipe</label>
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="Comunicação"> Comunicação</label>
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="Liderança"> Liderança</label>
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="Resolução de problemas"> Resolução de problemas</label>
+                                            <label class="skill-checkbox"><input type="checkbox" name="habilidades[]" value="Gestão de tempo"> Gestão de tempo</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="outras-habilidades">Outras habilidades (separadas por vírgula)</label>
+                                <input type="text" id="outras-habilidades" name="outras-habilidades">
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary prev-step" data-prev="4">Voltar</button>
+                                <button type="button" class="btn btn-primary next-step" data-next="6">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="6">
+                            <h2>Personalize seu Currículo</h2>
+                            <div class="form-group">
+                                <label for="modelo">Escolha um modelo</label>
+                                <div class="modelos-container">
+                                    <div class="modelo-option">
+                                        <input type="radio" id="modelo1" name="modelo" value="classico" checked>
+                                        <label for="modelo1">
+                                            <img src="../../images/resume-template-classic.jpg" alt="Modelo Clássico">
+                                            <span>Clássico</span>
+                                        </label>
+                                    </div>
+                                    <div class="modelo-option">
+                                        <input type="radio" id="modelo2" name="modelo" value="moderno">
+                                        <label for="modelo2">
+                                            <img src="../../images/resume-template-modern.jpg" alt="Modelo Moderno">
+                                            <span>Moderno</span>
+                                        </label>
+                                    </div>
+                                    <div class="modelo-option">
+                                        <input type="radio" id="modelo3" name="modelo" value="criativo">
+                                        <label for="modelo3">
+                                            <img src="../../images/resume-template-creative.jpg" alt="Modelo Criativo">
+                                            <span>Criativo</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cor">Cor principal</label>
+                                <input type="color" id="cor" name="cor" value="#4361ee">
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary prev-step" data-prev="5">Voltar</button>
+                                <button type="submit" class="btn btn-primary">Gerar Currículo</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-features">
+            <div class="container">
+                <h2>Por que usar o Currículo IA?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="../../images/ai-icon.svg" alt="IA Avançada" width="50">
+                        </div>
+                        <h3>IA Avançada</h3>
+                        <p>Nossa inteligência artificial analisa seu perfil e sugere melhorias para destacar seu currículo.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="../../images/design-icon.svg" alt="Design Profissional" width="50">
+                        </div>
+                        <h3>Design Profissional</h3>
+                        <p>Modelos criados por designers profissionais para causar uma ótima primeira impressão.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="../../images/atr-icon.svg" alt="Otimizado para ATS" width="50">
+                        </div>
+                        <h3>Otimizado para ATS</h3>
+                        <p>Formatos compatíveis com sistemas de rastreamento de candidatos (Applicant Tracking Systems).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-faq">
+            <div class="container">
+                <h2>Perguntas Frequentes</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">Quanto custa para gerar um currículo?</button>
+                        <div class="faq-answer">
+                            <p>Nossa ferramenta é completamente gratuita! Você pode gerar quantos currículos quiser sem nenhum custo.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Em quais formatos posso baixar meu currículo?</button>
+                        <div class="faq-answer">
+                            <p>Você pode baixar seu currículo nos formatos PDF, DOCX (Word) e TXT. Recomendamos o PDF para melhor preservação do layout.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Meus dados estão seguros?</button>
+                        <div class="faq-answer">
+                            <p>Sim, levamos a privacidade muito a sério. Seus dados não são compartilhados com terceiros e você pode solicitar a exclusão a qualquer momento.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Posso editar meu currículo depois de gerado?</button>
+                        <div class="faq-answer">
+                            <p>Sim, você pode fazer o download do arquivo DOCX e editá-lo no Microsoft Word ou similar. Também oferecemos a opção de salvar seu progresso em nossa plataforma.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Geradocumentos</h4>
+                    <p>Ferramentas automatizadas para geração de documentos profissionais utilizando inteligência artificial.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Ferramentas</h4>
+                    <ul>
+                        <li><a href="curriculo-ia.html">Currículo IA</a></li>
+                        <li><a href="../gera-proposta.html">Gera Proposta</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="../../politica-privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="../../termos-uso.html">Termos de Uso</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>contato@geradocumentos.com.br</li>
+                        <li>Suporte: suporte@geradocumentos.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Geradocumentos.com.br - Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="#"><img src="../../images/facebook-icon.svg" alt="Facebook" width="24"></a>
+                    <a href="#"><img src="../../images/instagram-icon.svg" alt="Instagram" width="24"></a>
+                    <a href="#"><img src="../../images/linkedin-icon.svg" alt="LinkedIn" width="24"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+    <script src="../../js/curriculo-ia.js"></script>
+</body>
+</html>
