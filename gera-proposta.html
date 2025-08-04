@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gera Proposta - Criador Automático de Propostas Comerciais | Geradocumentos.com.br</title>
+    <meta name="description" content="Crie propostas comerciais profissionais em minutos com nossa IA. Gere documentos personalizados para fechar mais negócios e impressionar seus clientes.">
+    <meta name="keywords" content="gerador de proposta, proposta comercial, criar proposta, modelo de proposta, proposta profissional, IA para propostas">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../../index.html" class="logo">
+                <img src="../../images/logo-geradocumentos.png" alt="Geradocumentos.com.br" width="220">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../curriculo-ia.html">Currículo IA</a></li>
+                    <li><a href="gera-proposta.html" class="active">Gera Proposta</a></li>
+                    <li><a href="../../index.html#como-funciona">Como Funciona</a></li>
+                    <li><a href="../../index.html#beneficios">Benefícios</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-button">Menu</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="tool-hero">
+            <div class="container">
+                <div class="tool-hero-content">
+                    <h1>Gera Proposta</h1>
+                    <p class="subtitle">Crie propostas comerciais profissionais em minutos com ajuda da nossa Inteligência Artificial</p>
+                    <div class="tool-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">+5.000</span>
+                            <span class="stat-label">Propostas geradas</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">87%</span>
+                            <span class="stat-label">Taxa de aceitação</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10 min</span>
+                            <span class="stat-label">Tempo médio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-hero-image">
+                    <img src="../../images/proposal-illustration.svg" alt="Criação de proposta comercial com IA" width="500">
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <form id="proposal-form">
+                        <div class="form-step active" data-step="1">
+                            <h2>Informações Básicas</h2>
+                            <div class="form-group">
+                                <label for="proposal-title">Título da Proposta</label>
+                                <input type="text" id="proposal-title" name="proposal-title" required placeholder="Ex: Proposta de Serviços de Desenvolvimento Web">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="your-company">Sua Empresa</label>
+                                    <input type="text" id="your-company" name="your-company" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-company">Empresa do Cliente</label>
+                                    <input type="text" id="client-company" name="client-company" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="proposal-date">Data da Proposta</label>
+                                <input type="date" id="proposal-date" name="proposal-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="valid-until">Válida até</label>
+                                <input type="date" id="valid-until" name="valid-until" required>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-primary next-step" data-next="2">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="2">
+                            <h2>Detalhes do Projeto</h2>
+                            <div class="form-group">
+                                <label for="project-description">Descrição do Projeto/Serviço</label>
+                                <textarea id="project-description" name="project-description" rows="4" required></textarea>
+                                <p class="form-hint">Descreva em detalhes o que será entregue ao cliente. Seja claro e específico.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="project-objectives">Objetivos do Projeto</label>
+                                <textarea id="project-objectives" name="project-objectives" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="deliverables">Entregáveis</label>
+                                <textarea id="deliverables" name="deliverables" rows="4" required></textarea>
+                                <p class="form-hint">Liste todos os itens ou serviços que serão entregues ao cliente.</p>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary prev-step" data-prev="1">Voltar</button>
+                                <button type="button" class="btn btn-primary next-step" data-next="3">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="3">
+                            <h2>Escopo e Cronograma</h2>
+                            <div class="form-group">
+                                <label for="project-scope">Escopo do Projeto</label>
+                                <textarea id="project-scope" name="project-scope" rows="4" required></textarea>
+                                <p class="form-hint">Defina claramente o que está incluído e o que não está incluído no projeto.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeline">Cronograma</label>
+                                <textarea id="timeline" name="timeline" rows="4" required></textarea>
+                                <p class="form-hint">Descreva as principais etapas e prazos do projeto.</p>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary prev-step" data-prev="2">Voltar</button>
+                                <button type="button" class="btn btn-primary next-step" data-next="4">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="4">
+                            <h2>Investimento e Pagamento</h2>
+                            <div id="services-container">
+                                <div class="service-item">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="service1">Serviço/Item</label>
+                                            <input type="text" id="service1" name="services[0][name]" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="quantity1">Quantidade</label>
+                                            <input type="number" id="quantity1" name="services[0][quantity]" min="1" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="unit-price1">Preço Unitário (R$)</label>
+                                            <input type="number" id="unit-price1" name="services[0][unit_price]" step="0.01" min="0" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="total-price1">Total (R$)</label>
+                                            <input type="number" id="total-price1" name="services[0][total_price]" step="0.01" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description1">Descrição</label>
+                                        <textarea id="description1" name="services[0][description]" rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" id="add-service" class="btn btn-small">+ Adicionar Serviço</button>
+                            
+                            <div class="form-group">
+                                <label for="payment-terms">Condições de Pagamento</label>
+                                <textarea id="payment-terms" name="payment-terms" rows="4" required></textarea>
+                                <p class="form-hint">Ex: 50% no aceite da proposta e 50% na entrega do projeto.</p>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary prev-step" data-prev="3">Voltar</button>
+                                <button type="button" class="btn btn-primary next-step" data-next="5">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="5">
+                            <h2>Termos e Condições</h2>
+                            <div class="form-group">
+                                <label for="terms-conditions">Termos e Condições Gerais</label>
+                                <textarea id="terms-conditions" name="terms-conditions" rows="6" required></textarea>
+                                <p class="form-hint">Inclua informações sobre garantias, políticas de cancelamento, confidencialidade, etc.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="acceptance">Instruções para Aceite</label>
+                                <textarea id="acceptance" name="acceptance" rows="3" required></textarea>
+                                <p class="form-hint">Ex: Esta proposta será considerada aceita mediante assinatura e retorno deste documento.</p>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary prev-step" data-prev="4">Voltar</button>
+                                <button type="button" class="btn btn-primary next-step" data-next="6">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="6">
+                            <h2>Personalização</h2>
+                            <div class="form-group">
+                                <label for="proposal-template">Modelo de Proposta</label>
+                                <select id="proposal-template" name="proposal-template" required>
+                                    <option value="moderno">Moderno</option>
+                                    <option value="classico">Clássico</option>
+                                    <option value="minimalista">Minimalista</option>
+                                    <option value="criativo">Criativo</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="primary-color">Cor Principal</label>
+                                <input type="color" id="primary-color" name="primary-color" value="#4361ee">
+                            </div>
+                            <div class="form-group">
+                                <label for="your-logo">Logo da Sua Empresa (opcional)</label>
+                                <input type="file" id="your-logo" name="your-logo" accept="image/*">
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary prev-step" data-prev="5">Voltar</button>
+                                <button type="submit" class="btn btn-primary">Gerar Proposta</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-features">
+            <div class="container">
+                <h2>Vantagens de Usar o Gera Proposta</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="../../images/time-icon.svg" alt="Economia de Tempo" width="50">
+                        </div>
+                        <h3>Economia de Tempo</h3>
+                        <p>Crie propostas profissionais em minutos, não em horas. Foque no que realmente importa: seu negócio.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="../../images/professional-icon.svg" alt="Imagem Profissional" width="50">
+                        </div>
+                        <h3>Imagem Profissional</h3>
+                        <p>Propostas bem estruturadas e visualmente atraentes que impressionam seus clientes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="../../images/custom-icon.svg" alt="Personalização" width="50">
+                        </div>
+                        <h3>Personalização</h3>
+                        <p>Adapte cada proposta às necessidades específicas de cada cliente com facilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-faq">
+            <div class="container">
+                <h2>Perguntas Frequentes</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">Posso usar o Gera Proposta gratuitamente?</button>
+                        <div class="faq-answer">
+                            <p>Sim! Nossa ferramenta básica é completamente gratuita. Oferecemos também planos premium com recursos adicionais para quem precisa de mais funcionalidades.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Em quais formatos posso baixar minha proposta?</button>
+                        <div class="faq-answer">
+                            <p>Você pode baixar sua proposta nos formatos PDF, DOCX (Word) e PPTX (PowerPoint). O PDF é recomendado para garantir que o layout permaneça intacto.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Posso salvar meus modelos de proposta?</button>
+                        <div class="faq-answer">
+                            <p>Sim, ao criar uma conta em nossa plataforma, você pode salvar seus modelos favoritos e reutilizá-los em futuras propostas.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Como posso compartilhar a proposta com meu cliente?</button>
+                        <div class="faq-answer">
+                            <p>Você pode baixar o arquivo e enviar por e-mail ou, se preferir, gerar um link compartilhável que seu cliente pode acessar online.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Geradocumentos</h4>
+                    <p>Ferramentas automatizadas para geração de documentos profissionais utilizando inteligência artificial.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Ferramentas</h4>
+                    <ul>
+                        <li><a href="../curriculo-ia.html">Currículo IA</a></li>
+                        <li><a href="gera-proposta.html">Gera Proposta</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="../../politica-privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="../../termos-uso.html">Termos de Uso</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>contato@geradocumentos.com.br</li>
+                        <li>Suporte: suporte@geradocumentos.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Geradocumentos.com.br - Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="#"><img src="../../images/facebook-icon.svg" alt="Facebook" width="24"></a>
+                    <a href="#"><img src="../../images/instagram-icon.svg" alt="Instagram" width="24"></a>
+                    <a href="#"><img src="../../images/linkedin-icon.svg" alt="LinkedIn" width="24"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+    <script src="../../js/gera-proposta.js"></script>
+</body>
+</html>
