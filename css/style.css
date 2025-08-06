@@ -110,7 +110,14 @@ img {
 }
 
 .logo img {
-    height: 40px;
+    height: 45px;
+    width: auto;
+    max-width: 240px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.02);
 }
 
 .main-nav ul {
@@ -904,5 +911,62 @@ h2 {
     
     .btn {
         width: 100%;
+    }
+}
+
+/* Error Pages */
+.error-page {
+    padding: 80px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.error-content h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.error-content p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--gray-color);
+}
+
+.error-tools {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .error-content h1 {
+        font-size: 2rem;
+    }
+    
+    .error-tools {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .error-tools .btn {
+        width: 200px;
+    }
+    
+    /* Logo responsivo */
+    .logo img {
+        height: 38px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 35px;
+        max-width: 180px;
     }
 }
