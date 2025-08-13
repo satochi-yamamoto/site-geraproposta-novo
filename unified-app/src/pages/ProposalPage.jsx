@@ -1,22 +1,15 @@
-import React from 'react';
-import { FileText } from 'lucide-react';
-import AppRedirectPage from '@/components/AppRedirectPage';
-import { APP_CONFIG, getAppUrl } from '@/config/apps';
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import ProposalGeneratorPage from './proposal/ProposalGeneratorPage'
+import ProposalResultPage from './proposal/ProposalResultPage'
 
-function ProposalPage() {
-	const appConfig = APP_CONFIG.proposal;
-	const appUrl = getAppUrl('proposal');
-
-	return (
-		<AppRedirectPage
-			appName={appConfig.name}
-			appUrl={appUrl}
-			description={appConfig.description}
-			icon={FileText}
-			gradient={appConfig.gradient}
-			color={appConfig.color}
-		/>
-	);
+const ProposalPage = () => {
+  return (
+    <Routes>
+      <Route index element={<ProposalGeneratorPage />} />
+      <Route path="resultado" element={<ProposalResultPage />} />
+    </Routes>
+  )
 }
 
-export default ProposalPage;
+export default ProposalPage

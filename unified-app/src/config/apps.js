@@ -21,13 +21,14 @@ export const APP_CONFIG = {
 		name: 'Gera Proposta',
 		description: 'Gerador de Propostas para MEIs e Freelancers',
 		url: {
-			development: 'http://localhost:3002',
-			production: 'https://gerador-propostas.geradocumentos.com.br'
+			development: '/gera-proposta', // Agora é integrado
+			production: '/gera-proposta'   // Também integrado em produção
 		},
 		path: '/gera-proposta',
 		icon: 'FileText',
 		gradient: 'from-purple-500 to-blue-600',
 		color: 'purple',
+		integrated: true // Marca como integrado
 		integrated: false // Ainda é externo
 	}
 };
