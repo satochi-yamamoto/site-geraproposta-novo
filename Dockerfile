@@ -7,14 +7,20 @@ WORKDIR /app
 # Copy package files
 COPY unified-app/package*.json ./
 
-# Install dependencies
-RUN npm ci --only=production
+# Install all dependencies (including devDependencies for build)
+RUN npm ci
 
 # Copy source code
 COPY unified-app/ .
 
+# Debug: List files and check package.json
+RUN ls -la && cat package.json | head -20
+
 # Build the application
 RUN npm run build
+
+# Debug: Verify build output
+RUN ls -la dist/
 
 # Production stage
 FROM nginx:alpine AS production
