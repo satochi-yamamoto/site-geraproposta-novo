@@ -157,7 +157,7 @@ const ProposalGeneratorPage = memo(() => {
   }, [activeTab])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 py-8">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -166,13 +166,13 @@ const ProposalGeneratorPage = memo(() => {
         >
           {/* Header */}
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl font-bold text-white mb-4 gradient-text">
               Gerador de Propostas Comerciais
             </h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-300 max-w-2xl mx-auto">
               Crie propostas profissionais para seus clientes de forma rápida e eficiente
             </p>
-            <div className="mt-4 flex items-center justify-center gap-2 text-sm text-gray-500">
+            <div className="mt-4 flex items-center justify-center gap-2 text-sm text-slate-400">
               <span>Usos restantes: {USAGE_LIMIT - usageCount}</span>
             </div>
           </div>
@@ -180,33 +180,33 @@ const ProposalGeneratorPage = memo(() => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Form Section */}
             <div className="lg:col-span-1">
-              <Card>
+              <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <FileText className="h-5 w-5" />
+                  <CardTitle className="flex items-center gap-2 text-white">
+                    <FileText className="h-5 w-5 text-blue-400" />
                     Dados da Proposta
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <Tabs value={activeTab} onValueChange={setActiveTab}>
-                    <TabsList className="grid w-full grid-cols-5">
-                      <TabsTrigger value="company" className="text-xs">
+                    <TabsList className="grid w-full grid-cols-5 bg-slate-700/50">
+                      <TabsTrigger value="company" className="text-xs text-slate-300 data-[state=active]:bg-blue-600 data-[state=active]:text-white">
                         <Building className="h-4 w-4 mr-1" />
                         Empresa
                       </TabsTrigger>
-                      <TabsTrigger value="client" className="text-xs">
+                      <TabsTrigger value="client" className="text-xs text-slate-300 data-[state=active]:bg-blue-600 data-[state=active]:text-white">
                         <User className="h-4 w-4 mr-1" />
                         Cliente
                       </TabsTrigger>
-                      <TabsTrigger value="proposal" className="text-xs">
+                      <TabsTrigger value="proposal" className="text-xs text-slate-300 data-[state=active]:bg-blue-600 data-[state=active]:text-white">
                         <FileTextIcon className="h-4 w-4 mr-1" />
                         Proposta
                       </TabsTrigger>
-                      <TabsTrigger value="items" className="text-xs">
+                      <TabsTrigger value="items" className="text-xs text-slate-300 data-[state=active]:bg-blue-600 data-[state=active]:text-white">
                         <Package className="h-4 w-4 mr-1" />
                         Itens
                       </TabsTrigger>
-                      <TabsTrigger value="customization" className="text-xs">
+                      <TabsTrigger value="customization" className="text-xs text-slate-300 data-[state=active]:bg-blue-600 data-[state=active]:text-white">
                         <Palette className="h-4 w-4 mr-1" />
                         Visual
                       </TabsTrigger>
@@ -216,51 +216,56 @@ const ProposalGeneratorPage = memo(() => {
                     <TabsContent value="company" className="space-y-4">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                          <Label htmlFor="companyName">Nome da Empresa *</Label>
+                          <Label htmlFor="companyName" className="text-slate-300">Nome da Empresa *</Label>
                           <Input
                             id="companyName"
                             value={formData.companyName}
                             onChange={(e) => updateFormData('companyName', e.target.value)}
                             placeholder="Minha Empresa LTDA"
+                            className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                           />
                         </div>
                         <div>
-                          <Label htmlFor="companyDocument">CNPJ/CPF</Label>
+                          <Label htmlFor="companyDocument" className="text-slate-300">CNPJ/CPF</Label>
                           <Input
                             id="companyDocument"
                             value={formData.companyDocument}
                             onChange={(e) => updateFormData('companyDocument', e.target.value)}
                             placeholder="00.000.000/0001-00"
+                            className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                           />
                         </div>
                         <div>
-                          <Label htmlFor="companyPhone">Telefone</Label>
+                          <Label htmlFor="companyPhone" className="text-slate-300">Telefone</Label>
                           <Input
                             id="companyPhone"
                             value={formData.companyPhone}
                             onChange={(e) => updateFormData('companyPhone', e.target.value)}
                             placeholder="(11) 99999-9999"
+                            className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                           />
                         </div>
                         <div>
-                          <Label htmlFor="companyEmail">Email</Label>
+                          <Label htmlFor="companyEmail" className="text-slate-300">Email</Label>
                           <Input
                             id="companyEmail"
                             type="email"
                             value={formData.companyEmail}
                             onChange={(e) => updateFormData('companyEmail', e.target.value)}
                             placeholder="contato@minhaempresa.com"
+                            className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                           />
                         </div>
                       </div>
                       <div>
-                        <Label htmlFor="companyAddress">Endereço</Label>
+                        <Label htmlFor="companyAddress" className="text-slate-300">Endereço</Label>
                         <Textarea
                           id="companyAddress"
                           value={formData.companyAddress}
                           onChange={(e) => updateFormData('companyAddress', e.target.value)}
                           placeholder="Rua, número, bairro, cidade - CEP"
                           rows={2}
+                          className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                         />
                       </div>
                     </TabsContent>
@@ -269,51 +274,56 @@ const ProposalGeneratorPage = memo(() => {
                     <TabsContent value="client" className="space-y-4">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                          <Label htmlFor="clientName">Nome do Cliente *</Label>
+                          <Label htmlFor="clientName" className="text-slate-300">Nome do Cliente *</Label>
                           <Input
                             id="clientName"
                             value={formData.clientName}
                             onChange={(e) => updateFormData('clientName', e.target.value)}
                             placeholder="Cliente LTDA"
+                            className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                           />
                         </div>
                         <div>
-                          <Label htmlFor="clientDocument">CNPJ/CPF</Label>
+                          <Label htmlFor="clientDocument" className="text-slate-300">CNPJ/CPF</Label>
                           <Input
                             id="clientDocument"
                             value={formData.clientDocument}
                             onChange={(e) => updateFormData('clientDocument', e.target.value)}
                             placeholder="00.000.000/0001-00"
+                            className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                           />
                         </div>
                         <div>
-                          <Label htmlFor="clientPhone">Telefone</Label>
+                          <Label htmlFor="clientPhone" className="text-slate-300">Telefone</Label>
                           <Input
                             id="clientPhone"
                             value={formData.clientPhone}
                             onChange={(e) => updateFormData('clientPhone', e.target.value)}
                             placeholder="(11) 99999-9999"
+                            className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                           />
                         </div>
                         <div>
-                          <Label htmlFor="clientEmail">Email</Label>
+                          <Label htmlFor="clientEmail" className="text-slate-300">Email</Label>
                           <Input
                             id="clientEmail"
                             type="email"
                             value={formData.clientEmail}
                             onChange={(e) => updateFormData('clientEmail', e.target.value)}
                             placeholder="cliente@email.com"
+                            className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                           />
                         </div>
                       </div>
                       <div>
-                        <Label htmlFor="clientAddress">Endereço</Label>
+                        <Label htmlFor="clientAddress" className="text-slate-300">Endereço</Label>
                         <Textarea
                           id="clientAddress"
                           value={formData.clientAddress}
                           onChange={(e) => updateFormData('clientAddress', e.target.value)}
                           placeholder="Rua, número, bairro, cidade - CEP"
                           rows={2}
+                          className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                         />
                       </div>
                     </TabsContent>
@@ -321,49 +331,52 @@ const ProposalGeneratorPage = memo(() => {
                     {/* Proposal Tab */}
                     <TabsContent value="proposal" className="space-y-4">
                       <div>
-                        <Label htmlFor="proposalTitle">Título da Proposta *</Label>
+                        <Label htmlFor="proposalTitle" className="text-slate-300">Título da Proposta *</Label>
                         <Input
                           id="proposalTitle"
                           value={formData.proposalTitle}
                           onChange={(e) => updateFormData('proposalTitle', e.target.value)}
                           placeholder="Proposta Comercial"
+                          className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                         />
                       </div>
                       <div>
-                        <Label htmlFor="proposalDescription">Descrição</Label>
+                        <Label htmlFor="proposalDescription" className="text-slate-300">Descrição</Label>
                         <Textarea
                           id="proposalDescription"
                           value={formData.proposalDescription}
                           onChange={(e) => updateFormData('proposalDescription', e.target.value)}
                           placeholder="Descrição dos serviços oferecidos..."
                           rows={3}
+                          className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                         />
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                          <Label htmlFor="validityDays">Validade (dias)</Label>
+                          <Label htmlFor="validityDays" className="text-slate-300">Validade (dias)</Label>
                           <Input
                             id="validityDays"
                             type="number"
                             value={formData.validityDays}
                             onChange={(e) => updateFormData('validityDays', e.target.value)}
                             placeholder="30"
+                            className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                           />
                         </div>
                         <div>
-                          <Label htmlFor="paymentTerms">Condições de Pagamento</Label>
+                          <Label htmlFor="paymentTerms" className="text-slate-300">Condições de Pagamento</Label>
                           <Select
                             value={formData.paymentTerms}
                             onValueChange={(value) => updateFormData('paymentTerms', value)}
                           >
-                            <SelectTrigger>
+                            <SelectTrigger className="bg-slate-700/50 border-slate-600 text-white">
                               <SelectValue placeholder="Selecione" />
                             </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="À vista">À vista</SelectItem>
-                              <SelectItem value="30 dias">30 dias</SelectItem>
-                              <SelectItem value="30/60 dias">30/60 dias</SelectItem>
-                              <SelectItem value="30/60/90 dias">30/60/90 dias</SelectItem>
+                            <SelectContent className="bg-slate-700 border-slate-600">
+                              <SelectItem value="À vista" className="text-white hover:bg-slate-600">À vista</SelectItem>
+                              <SelectItem value="30 dias" className="text-white hover:bg-slate-600">30 dias</SelectItem>
+                              <SelectItem value="30/60 dias" className="text-white hover:bg-slate-600">30/60 dias</SelectItem>
+                              <SelectItem value="30/60/90 dias" className="text-white hover:bg-slate-600">30/60/90 dias</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
@@ -374,65 +387,69 @@ const ProposalGeneratorPage = memo(() => {
                     <TabsContent value="items" className="space-y-4">
                       <div className="space-y-4">
                         {formData.items.map((item, index) => (
-                          <div key={index} className="border rounded-lg p-4 space-y-4">
+                          <div key={index} className="border border-slate-600 rounded-lg p-4 space-y-4 bg-slate-700/30">
                             <div className="flex justify-between items-center">
-                              <h4 className="font-medium">Item {index + 1}</h4>
+                              <h4 className="font-medium text-white">Item {index + 1}</h4>
                               {formData.items.length > 1 && (
                                 <Button
                                   variant="outline"
                                   size="sm"
                                   onClick={() => removeItem(index)}
+                                  className="border-slate-600 text-slate-300 hover:bg-slate-600"
                                 >
                                   Remover
                                 </Button>
                               )}
                             </div>
                             <div>
-                              <Label>Descrição *</Label>
+                              <Label className="text-slate-300">Descrição *</Label>
                               <Textarea
                                 value={item.description}
                                 onChange={(e) => updateItem(index, 'description', e.target.value)}
                                 placeholder="Descrição do serviço/produto"
                                 rows={2}
+                                className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                               />
                             </div>
                             <div className="grid grid-cols-3 gap-4">
                               <div>
-                                <Label>Quantidade *</Label>
+                                <Label className="text-slate-300">Quantidade *</Label>
                                 <Input
                                   type="number"
                                   value={item.quantity}
                                   onChange={(e) => updateItem(index, 'quantity', parseFloat(e.target.value) || 0)}
                                   min="1"
+                                  className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                                 />
                               </div>
                               <div>
-                                <Label>Valor Unitário *</Label>
+                                <Label className="text-slate-300">Valor Unitário *</Label>
                                 <Input
                                   type="number"
                                   value={item.unitPrice}
                                   onChange={(e) => updateItem(index, 'unitPrice', parseFloat(e.target.value) || 0)}
                                   min="0"
                                   step="0.01"
+                                  className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400"
                                 />
                               </div>
                               <div>
-                                <Label>Total</Label>
+                                <Label className="text-slate-300">Total</Label>
                                 <Input
                                   value={item.total.toFixed(2)}
                                   readOnly
-                                  className="bg-gray-50"
+                                  className="bg-slate-600/50 border-slate-600 text-slate-300"
                                 />
                               </div>
                             </div>
                           </div>
                         ))}
                         
-                        <Button onClick={addItem} variant="outline" className="w-full">
+                        <Button onClick={addItem} variant="outline" className="w-full border-slate-600 text-slate-300 hover:bg-slate-600">
                           Adicionar Item
                         </Button>
                         
-                        <div className="text-right text-lg font-semibold">
+                        <div className="text-right text-lg font-semibold text-white">
                           Total Geral: R$ {calculateTotal().toFixed(2)}
                         </div>
                       </div>
@@ -442,27 +459,28 @@ const ProposalGeneratorPage = memo(() => {
                     <TabsContent value="customization" className="space-y-4">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                          <Label htmlFor="primaryColor">Cor Principal</Label>
+                          <Label htmlFor="primaryColor" className="text-slate-300">Cor Principal</Label>
                           <Input
                             id="primaryColor"
                             type="color"
                             value={formData.primaryColor}
                             onChange={(e) => updateFormData('primaryColor', e.target.value)}
+                            className="bg-slate-700/50 border-slate-600 h-12"
                           />
                         </div>
                         <div>
-                          <Label htmlFor="template">Template</Label>
+                          <Label htmlFor="template" className="text-slate-300">Template</Label>
                           <Select
                             value={formData.template}
                             onValueChange={(value) => updateFormData('template', value)}
                           >
-                            <SelectTrigger>
+                            <SelectTrigger className="bg-slate-700/50 border-slate-600 text-white">
                               <SelectValue placeholder="Selecione" />
                             </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="modern">Moderno</SelectItem>
-                              <SelectItem value="classic">Clássico</SelectItem>
-                              <SelectItem value="minimal">Minimalista</SelectItem>
+                            <SelectContent className="bg-slate-700 border-slate-600">
+                              <SelectItem value="modern" className="text-white hover:bg-slate-600">Moderno</SelectItem>
+                              <SelectItem value="classic" className="text-white hover:bg-slate-600">Clássico</SelectItem>
+                              <SelectItem value="minimal" className="text-white hover:bg-slate-600">Minimalista</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
@@ -476,19 +494,20 @@ const ProposalGeneratorPage = memo(() => {
                       variant="outline" 
                       onClick={prevTab}
                       disabled={activeTab === 'company'}
+                      className="border-slate-600 text-slate-300 hover:bg-slate-600"
                     >
                       Anterior
                     </Button>
                     <div className="flex gap-2">
                       {activeTab !== 'customization' ? (
-                        <Button onClick={nextTab}>
+                        <Button onClick={nextTab} className="bg-blue-600 hover:bg-blue-700 text-white">
                           Próximo
                         </Button>
                       ) : (
                         <Button 
                           onClick={handleGenerate}
                           disabled={!isFormValid() || usageCount >= USAGE_LIMIT}
-                          className="bg-blue-600 hover:bg-blue-700"
+                          className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
                         >
                           Gerar Proposta
                         </Button>
@@ -501,17 +520,18 @@ const ProposalGeneratorPage = memo(() => {
 
             {/* Preview Section */}
             <div className="lg:col-span-1">
-              <Card className="sticky top-8">
+              <Card className="sticky top-8 bg-slate-800/50 border-slate-700 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-center justify-between">
-                    <CardTitle className="flex items-center gap-2">
-                      <Eye className="h-5 w-5" />
+                    <CardTitle className="flex items-center gap-2 text-white">
+                      <Eye className="h-5 w-5 text-blue-400" />
                       Pré-visualização
                     </CardTitle>
                     <Button
                       variant="outline"
                       size="sm"
                       onClick={() => setShowPreview(!showPreview)}
+                      className="border-slate-600 text-slate-300 hover:bg-slate-600"
                     >
                       {showPreview ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                     </Button>
@@ -519,55 +539,55 @@ const ProposalGeneratorPage = memo(() => {
                 </CardHeader>
                 {showPreview && (
                   <CardContent>
-                    <div className="border rounded-lg p-4 bg-white min-h-96 text-sm">
-                      <div className="text-center border-b pb-4 mb-4">
-                        <h2 className="text-xl font-bold" style={{ color: formData.primaryColor }}>
+                    <div className="border border-slate-600 rounded-lg p-4 bg-slate-900/50 min-h-96 text-sm">
+                      <div className="text-center border-b border-slate-600 pb-4 mb-4">
+                        <h2 className="text-xl font-bold text-white" style={{ color: formData.primaryColor }}>
                           {formData.proposalTitle || 'Proposta Comercial'}
                         </h2>
                         {formData.companyName && (
-                          <p className="text-gray-600 mt-2">{formData.companyName}</p>
+                          <p className="text-slate-300 mt-2">{formData.companyName}</p>
                         )}
                       </div>
                       
                       {formData.clientName && (
                         <div className="mb-4">
-                          <h3 className="font-semibold mb-2">Cliente:</h3>
-                          <p>{formData.clientName}</p>
+                          <h3 className="font-semibold mb-2 text-blue-400">Cliente:</h3>
+                          <p className="text-slate-300">{formData.clientName}</p>
                         </div>
                       )}
                       
                       {formData.proposalDescription && (
                         <div className="mb-4">
-                          <h3 className="font-semibold mb-2">Descrição:</h3>
-                          <p className="text-gray-700">{formData.proposalDescription}</p>
+                          <h3 className="font-semibold mb-2 text-blue-400">Descrição:</h3>
+                          <p className="text-slate-300">{formData.proposalDescription}</p>
                         </div>
                       )}
                       
                       {formData.items.some(item => item.description) && (
                         <div className="mb-4">
-                          <h3 className="font-semibold mb-2">Itens:</h3>
+                          <h3 className="font-semibold mb-2 text-blue-400">Itens:</h3>
                           <div className="space-y-2">
                             {formData.items.filter(item => item.description).map((item, index) => (
-                              <div key={index} className="flex justify-between items-center border-b pb-2">
+                              <div key={index} className="flex justify-between items-center border-b border-slate-600 pb-2">
                                 <div>
-                                  <p className="font-medium">{item.description}</p>
-                                  <p className="text-sm text-gray-600">
+                                  <p className="font-medium text-white">{item.description}</p>
+                                  <p className="text-sm text-slate-400">
                                     {item.quantity}x R$ {item.unitPrice.toFixed(2)}
                                   </p>
                                 </div>
-                                <span className="font-semibold">R$ {item.total.toFixed(2)}</span>
+                                <span className="font-semibold text-white">R$ {item.total.toFixed(2)}</span>
                               </div>
                             ))}
                           </div>
-                          <div className="text-right mt-4 pt-2 border-t">
-                            <span className="text-lg font-bold" style={{ color: formData.primaryColor }}>
+                          <div className="text-right mt-4 pt-2 border-t border-slate-600">
+                            <span className="text-lg font-bold text-white" style={{ color: formData.primaryColor }}>
                               Total: R$ {calculateTotal().toFixed(2)}
                             </span>
                           </div>
                         </div>
                       )}
                       
-                      <div className="text-xs text-gray-500 mt-6 pt-4 border-t">
+                      <div className="text-xs text-slate-400 mt-6 pt-4 border-t border-slate-600">
                         <p>Proposta válida por {formData.validityDays} dias</p>
                         <p>Condições: {formData.paymentTerms}</p>
                       </div>

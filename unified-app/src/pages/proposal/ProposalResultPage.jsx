@@ -101,7 +101,7 @@ const ProposalResultPage = memo(() => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 py-8">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -114,15 +114,15 @@ const ProposalResultPage = memo(() => {
               <Button
                 variant="outline"
                 onClick={() => navigate('/gera-proposta')}
-                className="mb-4"
+                className="mb-4 border-slate-600 text-slate-300 hover:bg-slate-600"
               >
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 Voltar ao Gerador
               </Button>
-              <h1 className="text-3xl font-bold text-gray-900">
+              <h1 className="text-3xl font-bold text-white gradient-text">
                 Proposta Gerada com Sucesso!
               </h1>
-              <p className="text-gray-600 mt-2">
+              <p className="text-slate-300 mt-2">
                 Sua proposta comercial foi criada e está pronta para uso
               </p>
             </div>
@@ -130,26 +130,26 @@ const ProposalResultPage = memo(() => {
 
           {/* Action Buttons */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            <Button onClick={handleDownloadPDF} className="flex-1">
+            <Button onClick={handleDownloadPDF} className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
               <Download className="h-4 w-4 mr-2" />
               Download PDF
             </Button>
-            <Button onClick={handlePrint} variant="outline" className="flex-1">
+            <Button onClick={handlePrint} variant="outline" className="flex-1 border-slate-600 text-slate-300 hover:bg-slate-600">
               <Printer className="h-4 w-4 mr-2" />
               Imprimir
             </Button>
-            <Button onClick={handleShare} variant="outline" className="flex-1">
+            <Button onClick={handleShare} variant="outline" className="flex-1 border-slate-600 text-slate-300 hover:bg-slate-600">
               <Share2 className="h-4 w-4 mr-2" />
               Compartilhar
             </Button>
-            <Button onClick={handleCopyLink} variant="outline" className="flex-1">
+            <Button onClick={handleCopyLink} variant="outline" className="flex-1 border-slate-600 text-slate-300 hover:bg-slate-600">
               <Copy className="h-4 w-4 mr-2" />
               Copiar Link
             </Button>
           </div>
 
           {/* Proposal Preview */}
-          <Card className="print:shadow-none print:border-none">
+          <Card className="print:shadow-none print:border-none bg-slate-800/50 border-slate-700 backdrop-blur-sm">
             <CardContent className="p-8">
               <div className="proposal-content">
                 {/* Header */}
@@ -297,12 +297,13 @@ const ProposalResultPage = memo(() => {
 
           {/* Additional Actions */}
           <div className="mt-8 text-center">
-            <p className="text-gray-600 mb-4">
+            <p className="text-slate-300 mb-4">
               Precisa fazer alterações?
             </p>
             <Button
               variant="outline"
               onClick={() => navigate('/gera-proposta')}
+              className="border-slate-600 text-slate-300 hover:bg-slate-600"
             >
               <FileText className="h-4 w-4 mr-2" />
               Criar Nova Proposta
