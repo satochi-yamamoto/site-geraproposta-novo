@@ -1,0 +1,64 @@
+# Dependencies
+unified-app/node_modules
+unified-app/.npm
+unified-app/.yarn
+
+# Build outputs
+unified-app/dist
+unified-app/build
+
+# Development files
+unified-app/.env
+unified-app/.env.local
+unified-app/.env.development.local
+unified-app/.env.test.local
+unified-app/.env.production.local
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+!README.md
+
+# Logs
+unified-app/logs
+unified-app/*.log
+unified-app/npm-debug.log*
+unified-app/yarn-debug.log*
+unified-app/yarn-error.log*
+
+# Runtime data
+unified-app/pids
+unified-app/*.pid
+unified-app/*.seed
+unified-app/*.pid.lock
+
+# Coverage directory used by tools like istanbul
+unified-app/coverage
+
+# Other projects in workspace
+microsaas-curriculo/
+gerador-propostas-meis/
+css/
+js/
+images/
+*.html
+!unified-app/
+
+# Docker
+Dockerfile
+Dockerfile.dev
+.dockerignore
+!nginx.conf
