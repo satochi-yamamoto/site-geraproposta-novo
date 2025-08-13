@@ -3,7 +3,7 @@ import React, { memo } from 'react';
 import AppRouter from '@/components/AppRouter';
 
 const App = memo(() => {
-  return <AppRouter />;
+	return <AppRouter />;
 });
 
 App.displayName = 'App';
