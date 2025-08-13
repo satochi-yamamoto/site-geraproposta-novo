@@ -5,6 +5,8 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
 
 // Import pages
 import HomePage from '@/pages/HomePage';
+import CurriculumPage from '@/pages/CurriculumPage';
+import ProposalPage from '@/pages/ProposalPage';
 import PrivacyPolicy from '@/pages/PrivacyPolicy';
 import TermsOfService from '@/pages/TermsOfService';
 
@@ -17,8 +19,8 @@ function App() {
 			<Layout>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
-					<Route path="/curriculo-ia/*" element={<div className="container mx-auto px-4 py-12 text-center"><h1 className="text-3xl font-bold">Currículo IA App</h1><p className="text-slate-300 mt-4">Em breve integração completa</p></div>} />
-					<Route path="/gera-proposta/*" element={<div className="container mx-auto px-4 py-12 text-center"><h1 className="text-3xl font-bold">Gera Proposta App</h1><p className="text-slate-300 mt-4">Em breve integração completa</p></div>} />
+					<Route path="/curriculo-ia/*" element={<CurriculumPage />} />
+					<Route path="/gera-proposta/*" element={<ProposalPage />} />
 					<Route path="/politica-privacidade" element={<PrivacyPolicy />} />
 					<Route path="/termos-uso" element={<TermsOfService />} />
 				</Routes>
