@@ -8,6 +8,7 @@
 - ✅ Output directory: `dist`
 - ✅ Rewrites configurados para SPA (React Router)
 
+
 ### 2. **Roteamento**
 - ✅ `_redirects` para fallback do React Router
 - ✅ Redirects dos arquivos `.html` antigos
