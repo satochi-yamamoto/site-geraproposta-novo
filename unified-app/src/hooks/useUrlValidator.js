@@ -1,4 +1,7 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
+import { logError, AppError } from '@/lib/errorHandling.jsx';
+
+/**rt { useState, useEffect, useCallback } from 'react';
 import { logError, AppError } from '@/lib/errorHandling';
 
 /**
