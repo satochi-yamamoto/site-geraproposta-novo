@@ -1,13 +1,13 @@
 {
+  "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "devCommand": "npm run dev",
-  "framework": "vite",
   "rewrites": [
     {
-      "source": "/images/(.*)",
-      "destination": "/images/$1"
+      "source": "/((?!api|images|assets|robots.txt|sitemap.xml|site.webmanifest|_headers|_redirects).*)",
+      "destination": "/index.html"
     }
   ],
   "redirects": [

@@ -13,13 +13,16 @@ export class AppError extends Error {
 }
 
 export const logError = (error, context = {}) => {
-	console.error('App Error:', {
-		message: error.message,
-		code: error.code || 'UNKNOWN',
-		context: { ...context, ...error.context },
-		timestamp: error.timestamp || new Date().toISOString(),
-		stack: error.stack
-	});
+	// Only log errors in development mode
+	if (import.meta.env.DEV) {
+		console.error('App Error:', {
+			message: error.message,
+			code: error.code || 'UNKNOWN',
+			context: { ...context, ...error.context },
+			timestamp: error.timestamp || new Date().toISOString(),
+			stack: error.stack
+		});
+	}
 };
 
 export const handleAsyncError = (asyncFn) => {

@@ -1,0 +1,8 @@
+# Redirects from old HTML files to new routes
+/curriculo-ia.html /curriculo-ia 301
+/gera-proposta.html /gera-proposta 301
+/politica-privacidade.html /politica-privacidade 301
+/termos-uso.html /termos-uso 301
+
+# SPA fallback for React Router
+/* /index.html 200

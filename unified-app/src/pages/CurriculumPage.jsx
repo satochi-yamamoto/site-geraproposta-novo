@@ -6,8 +6,8 @@ import CurriculumResultPage from './curriculum/CurriculumResultPage';
 function CurriculumPage() {
 	return (
 		<Routes>
-			<Route path="/" element={<CurriculumGeneratorPage />} />
-			<Route path="/resultado" element={<CurriculumResultPage />} />
+			<Route index element={<CurriculumGeneratorPage />} />
+			<Route path="resultado" element={<CurriculumResultPage />} />
 		</Routes>
 	);
 }
