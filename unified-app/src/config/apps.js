@@ -7,13 +7,14 @@ export const APP_CONFIG = {
 		name: 'Currículo IA',
 		description: 'Gerador de Currículos com Inteligência Artificial',
 		url: {
-			development: 'http://localhost:3001',
-			production: 'https://curriculo-ia.geradocumentos.com.br'
+			development: '/curriculo-ia', // Agora é integrado
+			production: '/curriculo-ia'   // Também integrado em produção
 		},
 		path: '/curriculo-ia',
 		icon: 'User',
 		gradient: 'from-blue-500 to-purple-600',
-		color: 'blue'
+		color: 'blue',
+		integrated: true // Marca como integrado
 	},
 	
 	proposal: {
@@ -26,7 +27,8 @@ export const APP_CONFIG = {
 		path: '/gera-proposta',
 		icon: 'FileText',
 		gradient: 'from-purple-500 to-blue-600',
-		color: 'purple'
+		color: 'purple',
+		integrated: false // Ainda é externo
 	}
 };
 
@@ -45,4 +47,8 @@ export const getAllApps = () => {
 		...config,
 		currentUrl: getAppUrl(key)
 	}));
+};
+
+export const isAppIntegrated = (appKey) => {
+	return APP_CONFIG[appKey]?.integrated || false;
 };

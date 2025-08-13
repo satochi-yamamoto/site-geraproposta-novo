@@ -1,21 +1,14 @@
 import React from 'react';
-import { User } from 'lucide-react';
-import AppRedirectPage from '@/components/AppRedirectPage';
-import { APP_CONFIG, getAppUrl } from '@/config/apps';
+import { Routes, Route } from 'react-router-dom';
+import CurriculumGeneratorPage from './curriculum/CurriculumGeneratorPage';
+import CurriculumResultPage from './curriculum/CurriculumResultPage';
 
 function CurriculumPage() {
-	const appConfig = APP_CONFIG.curriculum;
-	const appUrl = getAppUrl('curriculum');
-
 	return (
-		<AppRedirectPage
-			appName={appConfig.name}
-			appUrl={appUrl}
-			description={appConfig.description}
-			icon={User}
-			gradient={appConfig.gradient}
-			color={appConfig.color}
-		/>
+		<Routes>
+			<Route path="/" element={<CurriculumGeneratorPage />} />
+			<Route path="/resultado" element={<CurriculumResultPage />} />
+		</Routes>
 	);
 }
 

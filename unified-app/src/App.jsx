@@ -12,22 +12,25 @@ import TermsOfService from '@/pages/TermsOfService';
 
 // Import components
 import Layout from '@/components/Layout';
+import { ToastProvider } from '@/contexts/ToastContext';
 
 function App() {
 	return (
-		<Router>
-			<Layout>
-				<Routes>
-					<Route path="/" element={<HomePage />} />
-					<Route path="/curriculo-ia/*" element={<CurriculumPage />} />
-					<Route path="/gera-proposta/*" element={<ProposalPage />} />
-					<Route path="/politica-privacidade" element={<PrivacyPolicy />} />
-					<Route path="/termos-uso" element={<TermsOfService />} />
-				</Routes>
-				<Analytics />
-				<SpeedInsights />
-			</Layout>
-		</Router>
+		<ToastProvider>
+			<Router>
+				<Layout>
+					<Routes>
+						<Route path="/" element={<HomePage />} />
+						<Route path="/curriculo-ia/*" element={<CurriculumPage />} />
+						<Route path="/gera-proposta/*" element={<ProposalPage />} />
+						<Route path="/politica-privacidade" element={<PrivacyPolicy />} />
+						<Route path="/termos-uso" element={<TermsOfService />} />
+					</Routes>
+					<Analytics />
+					<SpeedInsights />
+				</Layout>
+			</Router>
+		</ToastProvider>
 	);
 }
 
