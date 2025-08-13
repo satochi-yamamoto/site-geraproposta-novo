@@ -28,7 +28,7 @@ function Layout({ children }) {
 			<main className="flex-1">
 				{children}
 			</main>
-			{!isAppPage && <Footer />}
+			<Footer />
 		</div>
 	);
 }
