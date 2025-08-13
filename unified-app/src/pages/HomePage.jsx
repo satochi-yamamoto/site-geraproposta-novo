@@ -3,8 +3,11 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { FileText, Code, Briefcase, Zap, Target, Star, Users, CheckCircle } from 'lucide-react';
+import { getAllApps } from '@/config/apps';
 
 function HomePage() {
+	const apps = getAllApps();
+	
 	return (
 		<div className="min-h-screen">
 			{/* Hero Section */}
@@ -25,18 +28,20 @@ function HomePage() {
 								Ferramentas especializadas para criar currículos otimizados para área de tecnologia e propostas comerciais profissionais. Rápido, moderno e otimizado para recrutadores tech.
 							</p>
 							<div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-								<Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-									<Link to="/curriculo-ia">
-										<Code className="mr-2 h-5 w-5" />
-										Criar Currículo Tech
-									</Link>
-								</Button>
-								<Button asChild variant="outline" size="lg" className="border-slate-600 hover:bg-slate-800">
-									<Link to="/gera-proposta">
-										<Briefcase className="mr-2 h-5 w-5" />
-										Gerar Proposta
-									</Link>
-								</Button>
+								{apps.slice(0, 2).map((app) => (
+									<Button 
+										key={app.key}
+										asChild 
+										size="lg" 
+										className={`${app.key === 'curriculum' ? 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700' : 'border-slate-600 hover:bg-slate-800'}`}
+										variant={app.key === 'curriculum' ? 'default' : 'outline'}
+									>
+										<Link to={app.path}>
+											{app.key === 'curriculum' ? <Code className="mr-2 h-5 w-5" /> : <Briefcase className="mr-2 h-5 w-5" />}
+											{app.key === 'curriculum' ? 'Criar Currículo Tech' : 'Gerar Proposta'}
+										</Link>
+									</Button>
+								))}
 							</div>
 						</motion.div>
 						
