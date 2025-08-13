@@ -10,7 +10,6 @@ function PrivacyPolicy() {
       <Helmet>
         <title>Política de Privacidade - Gerador de Currículos</title>
         <meta name="description" content="Saiba como tratamos seus dados no gerador de currículos e nossa política de anúncios." />
-        <meta name="google-adsense-account" content="ca-pub-4789090074866563" />
       </Helmet>
       
       <div className="glass-effect rounded-2xl p-8">

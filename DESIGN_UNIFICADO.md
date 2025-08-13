@@ -4,6 +4,38 @@
 
 Este documento resume a unificação visual implementada nos três sistemas da plataforma GeraDocumentos.
 
+## 🔗 **CORREÇÕES DE LINKS E LIMPEZA - 13/08/2025**
+
+### ✅ **Links do Cabeçalho Corrigidos**
+- **Antes**: Links externos para https://curriculoia.app.br/ e http://geraproposta.com.br/
+- **Depois**: Links locais para `microsaas-curriculo/index.html` e `gerador-propostas-meis/index.html`
+
+### 🧹 **Remoção Completa de AdSense**
+#### Site Principal (`index.html`)
+- ❌ Removido script do Google AdSense do `<head>`
+- ❌ Removido banner de AdSense após hero section
+- ❌ Removido banner de AdSense na seção de benefícios
+- ❌ Removido CSS `.adsense-banner` do arquivo de estilos
+
+#### Gerador de Propostas MEIs
+- ❌ Removido meta tag `google-adsense-account`
+- ❌ Removido preconnect para `pagead2.googlesyndication.com`
+- ❌ Removido script do AdSense
+- ❌ Deletado arquivo `src/lib/adsense-config.js`
+- ❌ Deletado componente `src/components/AdSenseAd.jsx`
+- ❌ Removida seção "Google AdSense" da Política de Privacidade
+- ❌ Removida seção "Publicidade" dos Termos de Serviço
+- ✅ Renumeradas seções subsequentes
+
+#### MicroSaaS Currículo
+- ❌ Removido meta tag `google-adsense-account` de `TermsOfService.jsx`
+- ❌ Removido meta tag `google-adsense-account` de `PrivacyPolicy.jsx`
+
+### 📏 **Ajuste de Espaçamentos**
+- **Seções Gerais**: Reduzido padding de `100px 0` para `60px 0`
+- **Hero Section**: Reduzido padding de `120px 0 80px` para `80px 0 60px`
+- **Espaçamento entre blocos**: Otimizado para evitar excessos
+
 ## 🎨 Sistema de Cores Unificado
 
 ### Paleta Principal
@@ -26,6 +58,8 @@ Este documento resume a unificação visual implementada nos três sistemas da p
 - ✅ Efeitos glass morphism
 - ✅ Animações e transições suaves
 - ✅ Typography system com Inter font
+- ✅ Links corrigidos para aplicações locais
+- ✅ Espaçamentos otimizados
 
 ### 2. MicroSaaS Currículo (/microsaas-curriculo)
 **Arquivo**: `src/index.css`
@@ -33,6 +67,7 @@ Este documento resume a unificação visual implementada nos três sistemas da p
 - ✅ Mantidas configurações do Tailwind CSS
 - ✅ Glass effects e gradient text
 - ✅ Animações floating e gradient-shift
+- ✅ Remoção de referências AdSense
 
 ### 3. Gerador de Propostas MEIs (/gerador-propostas-meis)
 **Arquivo**: `src/index.css`
@@ -40,6 +75,7 @@ Este documento resume a unificação visual implementada nos três sistemas da p
 - ✅ Cores unificadas implementadas
 - ✅ Preview de propostas otimizado para tema escuro
 - ✅ Efeitos visuais consistentes
+- ✅ Limpeza completa de AdSense
 
 ## 🎭 Componentes Visuais
 
@@ -102,6 +138,8 @@ Este documento resume a unificação visual implementada nos três sistemas da p
 3. **Manutenibilidade**: Sistema centralizado de cores e componentes
 4. **Performance**: Otimizações CSS e carregamento de fontes
 5. **Acessibilidade**: Contraste adequado e legibilidade aprimorada
+6. **Navegação Local**: Todas as aplicações integradas localmente
+7. **Limpeza de Código**: Remoção de dependências desnecessárias
 
 ## 📄 Próximos Passos
 
@@ -113,6 +151,6 @@ Este documento resume a unificação visual implementada nos três sistemas da p
 
 ---
 
-**Data da Última Atualização**: $(date)
-**Versão**: 1.0.0
+**Data da Última Atualização**: 13 de Agosto de 2025
+**Versão**: 1.1.0
 **Responsável**: Sistema de Design GeraDocumentos

@@ -158,26 +158,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">6. Google AdSense</h2>
-                <p className="text-gray-700 leading-relaxed mb-3">
-                  Este site pode exibir anúncios através do Google AdSense. O Google pode usar cookies para:
-                </p>
-                <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
-                  <li>Exibir anúncios baseados em visitas anteriores</li>
-                  <li>Personalizar anúncios com base no seu interesse</li>
-                  <li>Medir a efetividade dos anúncios</li>
-                </ul>
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mt-3">
-                  <p className="text-blue-700 text-sm">
-                    <strong>Você pode optar por não receber anúncios personalizados</strong> visitando as 
-                    <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer" 
-                       className="underline hover:text-blue-800"> Configurações de Anúncios do Google</a>.
-                  </p>
-                </div>
-              </section>
-
-              <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">7. Segurança</h2>
+                <h2 className="text-xl font-semibold mb-3 text-blue-900">6. Segurança</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Como seus dados ficam apenas no seu navegador, a segurança depende das medidas de 
                   proteção do seu dispositivo. Recomendamos:
@@ -191,7 +172,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">8. Conformidade com LGPD</h2>
+                <h2 className="text-xl font-semibold mb-3 text-blue-900">7. Conformidade com LGPD</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Esta aplicação está em total conformidade com a Lei Geral de Proteção de Dados (LGPD), pois:
                 </p>
@@ -207,7 +188,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">9. Alterações nesta Política</h2>
+                <h2 className="text-xl font-semibold mb-3 text-blue-900">8. Alterações nesta Política</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Eventuais alterações nesta política serão comunicadas através de aviso na aplicação. 
                   Mudanças significativas só entrarão em vigor após 30 dias da notificação.
@@ -215,7 +196,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">10. Contato</h2>
+                <h2 className="text-xl font-semibold mb-3 text-blue-900">9. Contato</h2>
                 <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
                   <p className="text-gray-700 leading-relaxed">
                     Para dúvidas sobre esta política de privacidade, entre em contato através do repositório GitHub:

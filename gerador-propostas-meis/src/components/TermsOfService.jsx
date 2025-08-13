@@ -105,16 +105,7 @@ const TermsOfService = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">8. Publicidade</h2>
-                <p className="text-gray-700 leading-relaxed">
-                  Esta aplicação pode exibir anúncios através do Google AdSense para sustentar os custos 
-                  de manutenção. Os anúncios são selecionados automaticamente pelo Google e não 
-                  representam endosso de nossa parte.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">9. Modificações</h2>
+                <h2 className="text-xl font-semibold mb-3 text-blue-900">8. Modificações</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Reservamo-nos o direito de modificar estes termos a qualquer momento. Alterações 
                   significativas serão comunicadas através de aviso na aplicação. O uso continuado 
@@ -123,7 +114,7 @@ const TermsOfService = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">10. Encerramento</h2>
+                <h2 className="text-xl font-semibold mb-3 text-blue-900">9. Encerramento</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Podemos suspender ou encerrar o acesso ao serviço a qualquer momento, por qualquer 
                   motivo, incluindo violação destes termos. Você pode parar de usar o serviço a 
@@ -132,7 +123,7 @@ const TermsOfService = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">11. Lei Aplicável</h2>
+                <h2 className="text-xl font-semibold mb-3 text-blue-900">10. Lei Aplicável</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Estes termos são regidos pelas leis do Brasil. Qualquer disputa será resolvida 
                   nos tribunais brasileiros competentes.
@@ -140,7 +131,7 @@ const TermsOfService = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">12. Contato</h2>
+                <h2 className="text-xl font-semibold mb-3 text-blue-900">11. Contato</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Para questões sobre estes termos, entre em contato através do repositório GitHub: 
                   <a href="https://github.com/satochi-yamamoto/gerador-propostas-meis" 
