@@ -190,11 +190,11 @@ Para mais detalhes, vamos conversar!`;
               <FileText size={32} />
             </div>
             <h1 className="text-4xl font-bold gradient-text">
-              Gerador de Propostas MEI
+              Gerador de Propostas Comerciais
             </h1>
           </div>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Crie propostas comerciais profissionais em minutos. Personalize, visualize e baixe em PDF.
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+            Crie propostas comerciais profissionais para projetos de tecnologia e consultoria. Personalize, visualize e baixe em PDF otimizado.
           </p>
           <div className="mt-4 flex items-center justify-center gap-4">
             <div className="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">

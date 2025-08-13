@@ -21,16 +21,16 @@ const TermsOfService = () => {
             </CardHeader>
             <CardContent className="space-y-6">
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">1. Aceitação dos Termos</h2>
-                <p className="text-gray-700 leading-relaxed">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">1. Aceitação dos Termos</h2>
+                <p className="text-gray-300 leading-relaxed">
                   Ao acessar e usar o Gerador de Propostas MEI, você concorda em cumprir estes termos de uso. 
                   Se você não concordar com qualquer parte destes termos, não deve usar nossa aplicação.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">2. Descrição do Serviço</h2>
-                <p className="text-gray-700 leading-relaxed">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">2. Descrição do Serviço</h2>
+                <p className="text-gray-300 leading-relaxed">
                   O Gerador de Propostas MEI é uma ferramenta web gratuita que permite criar propostas comerciais 
                   profissionais para microempreendedores individuais. O serviço inclui personalização de cores, 
                   upload de logotipo e geração de PDF.
@@ -38,17 +38,17 @@ const TermsOfService = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">3. Uso Adequado</h2>
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">3. Uso Adequado</h2>
                 <div className="space-y-3">
                   <h3 className="font-medium text-gray-800">3.1 Uso Permitido</h3>
-                  <ul className="list-disc list-inside text-gray-700 space-y-1">
+                  <ul className="list-disc list-inside text-gray-300 space-y-1">
                     <li>Criar propostas comerciais legítimas para seu negócio MEI</li>
                     <li>Personalizar templates conforme suas necessidades</li>
                     <li>Baixar e compartilhar propostas geradas</li>
                   </ul>
                   
                   <h3 className="font-medium text-gray-800">3.2 Uso Proibido</h3>
-                  <ul className="list-disc list-inside text-gray-700 space-y-1">
+                  <ul className="list-disc list-inside text-gray-300 space-y-1">
                     <li>Criar conteúdo fraudulento, enganoso ou ilegal</li>
                     <li>Tentar quebrar ou contornar limitações do sistema</li>
                     <li>Usar a plataforma para spam ou atividades maliciosas</li>
@@ -58,8 +58,8 @@ const TermsOfService = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">4. Limitações do Serviço</h2>
-                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">4. Limitações do Serviço</h2>
+                <ul className="list-disc list-inside text-gray-300 space-y-2">
                   <li>Limite de 3 propostas gratuitas por mês por usuário</li>
                   <li>Tamanho máximo de 2MB para upload de logotipos</li>
                   <li>Disponibilidade sujeita a manutenções programadas</li>
@@ -67,8 +67,8 @@ const TermsOfService = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">5. Propriedade Intelectual</h2>
-                <p className="text-gray-700 leading-relaxed">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">5. Propriedade Intelectual</h2>
+                <p className="text-gray-300 leading-relaxed">
                   O código-fonte desta aplicação está disponível sob licença MIT. Você mantém todos os direitos 
                   sobre o conteúdo das propostas que criar. Os templates e design da interface são propriedade 
                   do projeto Gerador de Propostas MEI.
@@ -76,10 +76,10 @@ const TermsOfService = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">6. Responsabilidades</h2>
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">6. Responsabilidades</h2>
                 <div className="space-y-3">
                   <h3 className="font-medium text-gray-800">6.1 Suas Responsabilidades</h3>
-                  <ul className="list-disc list-inside text-gray-700 space-y-1">
+                  <ul className="list-disc list-inside text-gray-300 space-y-1">
                     <li>Garantir a veracidade das informações inseridas</li>
                     <li>Revisar propostas antes de enviar aos clientes</li>
                     <li>Manter backup de dados importantes</li>
@@ -87,7 +87,7 @@ const TermsOfService = () => {
                   </ul>
                   
                   <h3 className="font-medium text-gray-800">6.2 Nossas Responsabilidades</h3>
-                  <ul className="list-disc list-inside text-gray-700 space-y-1">
+                  <ul className="list-disc list-inside text-gray-300 space-y-1">
                     <li>Manter a aplicação funcionando adequadamente</li>
                     <li>Proteger a privacidade conforme nossa política</li>
                     <li>Fornecer suporte através do GitHub</li>
@@ -96,8 +96,8 @@ const TermsOfService = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">7. Isenção de Responsabilidade</h2>
-                <p className="text-gray-700 leading-relaxed">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">7. Isenção de Responsabilidade</h2>
+                <p className="text-gray-300 leading-relaxed">
                   O serviço é fornecido "como está" sem garantias de qualquer tipo. Não nos responsabilizamos 
                   por perdas de dados, danos comerciais ou outros prejuízos decorrentes do uso da aplicação. 
                   É sua responsabilidade revisar e validar todas as propostas antes do envio.
@@ -105,8 +105,8 @@ const TermsOfService = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">8. Modificações</h2>
-                <p className="text-gray-700 leading-relaxed">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">8. Modificações</h2>
+                <p className="text-gray-300 leading-relaxed">
                   Reservamo-nos o direito de modificar estes termos a qualquer momento. Alterações 
                   significativas serão comunicadas através de aviso na aplicação. O uso continuado 
                   após as alterações constituirá aceitação dos novos termos.
@@ -114,8 +114,8 @@ const TermsOfService = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">9. Encerramento</h2>
-                <p className="text-gray-700 leading-relaxed">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">9. Encerramento</h2>
+                <p className="text-gray-300 leading-relaxed">
                   Podemos suspender ou encerrar o acesso ao serviço a qualquer momento, por qualquer 
                   motivo, incluindo violação destes termos. Você pode parar de usar o serviço a 
                   qualquer momento.
@@ -123,16 +123,16 @@ const TermsOfService = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">10. Lei Aplicável</h2>
-                <p className="text-gray-700 leading-relaxed">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">10. Lei Aplicável</h2>
+                <p className="text-gray-300 leading-relaxed">
                   Estes termos são regidos pelas leis do Brasil. Qualquer disputa será resolvida 
                   nos tribunais brasileiros competentes.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">11. Contato</h2>
-                <p className="text-gray-700 leading-relaxed">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">11. Contato</h2>
+                <p className="text-gray-300 leading-relaxed">
                   Para questões sobre estes termos, entre em contato através do repositório GitHub: 
                   <a href="https://github.com/satochi-yamamoto/gerador-propostas-meis" 
                      className="text-blue-600 hover:underline ml-1"

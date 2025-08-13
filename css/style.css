@@ -393,13 +393,14 @@ section {
     max-width: 700px;
     margin: 0 auto 40px;
     text-align: center;
-    color: var(--gray-color);
+    color: var(--text-secondary);
 }
 
 h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
+    color: var(--text-primary);
 }
 
 /* Tools Section */
@@ -411,17 +412,20 @@ h2 {
 }
 
 .tool-card {
-    background: white;
-    border-radius: 8px;
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
     padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
     text-align: center;
 }
 
 .tool-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+    border-color: var(--primary-light);
 }
 
 .tool-icon {
@@ -430,12 +434,15 @@ h2 {
 
 .tool-card h3 {
     margin-bottom: 15px;
-    color: var(--dark-color);
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .tool-card p {
     margin-bottom: 20px;
-    color: var(--gray-color);
+    color: var(--text-secondary);
+    line-height: 1.6;
 }
 
 /* How It Works */
@@ -458,8 +465,8 @@ h2 {
 .step-number {
     width: 50px;
     height: 50px;
-    background-color: var(--primary-color);
-    color: white;
+    background: var(--gradient-primary);
+    color: var(--text-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -467,10 +474,19 @@ h2 {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 auto 20px;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 .step h3 {
     margin-bottom: 15px;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.step p {
+    color: var(--text-secondary);
+    line-height: 1.6;
 }
 
 /* Benefits Section */
@@ -482,20 +498,31 @@ h2 {
 }
 
 .benefit-card {
-    background: white;
-    border-radius: 8px;
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
     padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(59, 130, 246, 0.2);
 }
 
 .benefit-card h3 {
     margin-bottom: 15px;
-    color: var(--dark-color);
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .benefit-card p {
-    color: var(--gray-color);
+    color: var(--text-secondary);
+    line-height: 1.6;
 }
 
 /* Testimonials */
@@ -520,16 +547,16 @@ h2 {
 .testimonial-content p {
     font-style: italic;
     margin-bottom: 20px;
-    color: var(--gray-color);
+    color: var(--text-secondary);
 }
 
 .author strong {
     display: block;
-    color: var(--dark-color);
+    color: var(--text-primary);
 }
 
 .author span {
-    color: var(--gray-color);
+    color: var(--text-secondary);
     font-size: 0.9rem;
 }
 
@@ -568,7 +595,7 @@ h2 {
 
 /* Footer */
 .main-footer {
-    background-color: var(--dark-color);
+    background-color: var(--text-primary);
     color: white;
     padding: 60px 0 0;
 }
@@ -676,7 +703,7 @@ h2 {
 
 .cookie-consent .btn-outline:hover {
     background: white;
-    color: var(--dark-color);
+    color: var(--text-primary);
 }
 
 /* Policy Pages Styles */
@@ -701,7 +728,7 @@ h2 {
 }
 
 .policy-content h2, .terms-content h2 {
-    color: var(--dark-color);
+    color: var(--text-primary);
     margin-top: 30px;
     margin-bottom: 15px;
     border-bottom: 2px solid var(--light-gray);
@@ -709,13 +736,13 @@ h2 {
 }
 
 .policy-content h3, .terms-content h3 {
-    color: var(--gray-color);
+    color: var(--text-secondary);
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .last-updated {
-    color: var(--gray-color);
+    color: var(--text-secondary);
     font-style: italic;
     margin-bottom: 30px;
 }
@@ -780,7 +807,7 @@ h2 {
 
 .stat-label {
     font-size: 0.9rem;
-    color: var(--gray-color);
+    color: var(--text-secondary);
 }
 
 .form-container {
@@ -814,7 +841,7 @@ h2 {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: var(--dark-color);
+    color: var(--text-primary);
 }
 
 .form-group input,
@@ -844,7 +871,7 @@ h2 {
 
 .form-hint {
     font-size: 0.85rem;
-    color: var(--gray-color);
+    color: var(--text-secondary);
     margin-top: 5px;
 }
 
@@ -866,7 +893,7 @@ h2 {
 .skill-category h3 {
     font-size: 1rem;
     margin-bottom: 10px;
-    color: var(--dark-color);
+    color: var(--text-primary);
 }
 
 .skills-list {
@@ -969,11 +996,11 @@ h2 {
 
 .feature-card h3 {
     margin-bottom: 15px;
-    color: var(--dark-color);
+    color: var(--text-primary);
 }
 
 .feature-card p {
-    color: var(--gray-color);
+    color: var(--text-secondary);
 }
 
 /* FAQ Section */
@@ -1004,7 +1031,7 @@ h2 {
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
-    color: var(--dark-color);
+    color: var(--text-primary);
     transition: background-color 0.3s ease;
 }
 
@@ -1023,7 +1050,7 @@ h2 {
 }
 
 .faq-answer p {
-    color: var(--gray-color);
+    color: var(--text-secondary);
     line-height: 1.6;
 }
 
@@ -1124,7 +1151,7 @@ h2 {
 .error-content p {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    color: var(--gray-color);
+    color: var(--text-secondary);
 }
 
 .error-tools {

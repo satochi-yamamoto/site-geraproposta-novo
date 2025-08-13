@@ -56,7 +56,7 @@ const PrivacyPolicy = () => {
               </div>
 
               <section>
-                <h2 className="text-xl font-semibold mb-4 text-blue-900 flex items-center gap-2">
+                <h2 className="text-xl font-semibold mb-4 text-blue-400 flex items-center gap-2">
                   <Database className="h-5 w-5" />
                   1. Como Seus Dados São Tratados
                 </h2>
@@ -89,9 +89,9 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">2. Tecnologia LocalStorage</h2>
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">2. Tecnologia LocalStorage</h2>
                 <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-300 leading-relaxed">
                     Utilizamos a tecnologia <strong>LocalStorage</strong> do seu navegador para armazenar suas informações. 
                     Esta tecnologia mantém os dados <strong>exclusivamente no seu dispositivo</strong>, sem qualquer 
                     transmissão para servidores externos. É como um "arquivo local" que apenas você tem acesso.
@@ -100,11 +100,11 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900 flex items-center gap-2">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400 flex items-center gap-2">
                   <Eye className="h-5 w-5" />
                   3. Dados de Analytics (Anônimos)
                 </h2>
-                <p className="text-gray-700 leading-relaxed mb-3">
+                <p className="text-gray-300 leading-relaxed mb-3">
                   Coletamos apenas dados estatísticos anônimos através do Vercel Analytics para melhorar nossa aplicação:
                 </p>
                 <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
@@ -121,11 +121,11 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">4. Controle Total dos Seus Dados</h2>
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">4. Controle Total dos Seus Dados</h2>
                 <div className="space-y-4">
                   <div className="border border-blue-200 rounded-lg p-4">
                     <h3 className="font-medium text-blue-800 mb-2">🗑️ Como Limpar Seus Dados</h3>
-                    <p className="text-gray-700 text-sm">
+                    <p className="text-gray-300 text-sm">
                       Você pode excluir todos os seus dados a qualquer momento através das configurações do navegador 
                       ou limpando o histórico de navegação. Os dados também são removidos automaticamente se você 
                       desinstalar ou redefinir o navegador.
@@ -134,7 +134,7 @@ const PrivacyPolicy = () => {
                   
                   <div className="border border-blue-200 rounded-lg p-4">
                     <h3 className="font-medium text-blue-800 mb-2">🔄 Portabilidade</h3>
-                    <p className="text-gray-700 text-sm">
+                    <p className="text-gray-300 text-sm">
                       Como os dados ficam no seu navegador, você tem controle total para fazer backup, 
                       exportar ou transferir suas informações quando desejar.
                     </p>
@@ -143,11 +143,11 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">5. Cookies e Tecnologias Similares</h2>
-                <p className="text-gray-700 leading-relaxed mb-3">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">5. Cookies e Tecnologias Similares</h2>
+                <p className="text-gray-300 leading-relaxed mb-3">
                   Utilizamos cookies apenas para:
                 </p>
-                <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                <ul className="list-disc list-inside text-gray-300 space-y-1 ml-4">
                   <li><strong>Funcionalidade básica</strong> - Manter suas preferências durante a sessão</li>
                   <li><strong>Analytics anônimos</strong> - Vercel Analytics para estatísticas gerais</li>
                   <li><strong>Performance</strong> - Cache de recursos para carregamento mais rápido</li>
@@ -158,12 +158,12 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">6. Segurança</h2>
-                <p className="text-gray-700 leading-relaxed">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">6. Segurança</h2>
+                <p className="text-gray-300 leading-relaxed">
                   Como seus dados ficam apenas no seu navegador, a segurança depende das medidas de 
                   proteção do seu dispositivo. Recomendamos:
                 </p>
-                <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4 mt-2">
+                <ul className="list-disc list-inside text-gray-300 space-y-1 ml-4 mt-2">
                   <li>Manter o navegador sempre atualizado</li>
                   <li>Usar senhas seguras em seus dispositivos</li>
                   <li>Não utilizar a aplicação em computadores públicos para dados sensíveis</li>
@@ -172,8 +172,8 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">7. Conformidade com LGPD</h2>
-                <p className="text-gray-700 leading-relaxed">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">7. Conformidade com LGPD</h2>
+                <p className="text-gray-300 leading-relaxed">
                   Esta aplicação está em total conformidade com a Lei Geral de Proteção de Dados (LGPD), pois:
                 </p>
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4 mt-3">
@@ -188,17 +188,17 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">8. Alterações nesta Política</h2>
-                <p className="text-gray-700 leading-relaxed">
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">8. Alterações nesta Política</h2>
+                <p className="text-gray-300 leading-relaxed">
                   Eventuais alterações nesta política serão comunicadas através de aviso na aplicação. 
                   Mudanças significativas só entrarão em vigor após 30 dias da notificação.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold mb-3 text-blue-900">9. Contato</h2>
+                <h2 className="text-xl font-semibold mb-3 text-blue-400">9. Contato</h2>
                 <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-300 leading-relaxed">
                     Para dúvidas sobre esta política de privacidade, entre em contato através do repositório GitHub:
                   </p>
                   <a href="https://github.com/satochi-yamamoto/gerador-propostas-meis/issues" 
