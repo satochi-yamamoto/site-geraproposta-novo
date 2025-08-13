@@ -1,0 +1,8 @@
+{
+  "name": "site-geraproposta-novo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:satochi-yamamoto/site-geraproposta-novo.git",
+  "author": "satochi-yamamoto <alextoyama@hotmail.com>",
+  "license": "MIT"
+}

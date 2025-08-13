@@ -29,7 +29,6 @@ export const APP_CONFIG = {
 		gradient: 'from-purple-500 to-blue-600',
 		color: 'purple',
 		integrated: true // Marca como integrado
-		integrated: false // Ainda é externo
 	}
 };
 
