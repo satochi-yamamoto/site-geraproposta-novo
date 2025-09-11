@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__TestSprite__testsprite_bootstrap_tests",
+      "mcp__TestSprite__testsprite_generate_code_summary",
+      "Bash(mkdir:*)",
+      "mcp__TestSprite__testsprite_generate_frontend_test_plan",
+      "mcp__TestSprite__testsprite_generate_standardized_prd",
+      "mcp__TestSprite__testsprite_generate_code_and_execute",
+      "Bash(node:*)",
+      "Read(//home/satochi/**)",
+      "Bash(npx @testsprite/testsprite-mcp:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

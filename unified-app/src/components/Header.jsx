@@ -20,11 +20,11 @@ function Header() {
 			<div className="container mx-auto px-4">
 				<div className="flex justify-between items-center py-4">
 					{/* Logo */}
-					<Link to="/" className="flex items-center">
+					<Link to="/" className="flex items-center group">
 						<img 
 							src="/images/logo-horizontal.svg" 
 							alt="Geradocumentos.com.br - Documentos Profissionais com IA" 
-							className="h-10 w-auto"
+							className="h-12 w-auto transition-all duration-300 group-hover:scale-105 group-hover:brightness-110 drop-shadow-lg"
 						/>
 					</Link>
 

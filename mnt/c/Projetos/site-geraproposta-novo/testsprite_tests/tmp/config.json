@@ -1,0 +1,13 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3000",
+  "executionArgs": {
+    "projectName": "site-geraproposta-novo",
+    "projectPath": "mnt/c/Projetos/site-geraproposta-novo",
+    "testIds": [],
+    "additionalInstruction": "Test the unified document generation platform including both curriculum and proposal generation features. Focus on UI functionality, navigation between apps, PDF generation capabilities, and overall user experience flow.",
+    "envs": {}
+  }
+}

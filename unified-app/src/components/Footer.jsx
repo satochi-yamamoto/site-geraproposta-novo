@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
 function Footer() {
 	return (
@@ -20,32 +19,7 @@ function Footer() {
 							Transforme sua carreira com documentos profissionais criados por Inteligência Artificial. 
 							Currículos e propostas comerciais de qualidade profissional em minutos.
 						</p>
-						<div className="flex space-x-4">
-							<a 
-								href="https://facebook.com/geradocumentos" 
-								target="_blank" 
-								rel="noopener noreferrer"
-								className="text-slate-400 hover:text-blue-400 transition-colors"
-							>
-								<Facebook className="h-5 w-5" />
-							</a>
-							<a 
-								href="https://instagram.com/geradocumentos" 
-								target="_blank" 
-								rel="noopener noreferrer"
-								className="text-slate-400 hover:text-blue-400 transition-colors"
-							>
-								<Instagram className="h-5 w-5" />
-							</a>
-							<a 
-								href="https://linkedin.com/company/geradocumentos" 
-								target="_blank" 
-								rel="noopener noreferrer"
-								className="text-slate-400 hover:text-blue-400 transition-colors"
-							>
-								<Linkedin className="h-5 w-5" />
-							</a>
-						</div>
+
 					</div>
 
 					{/* Ferramentas */}

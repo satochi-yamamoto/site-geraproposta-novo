@@ -1,0 +1,46 @@
+{
+  "projectName": "Site Gera Proposta",
+  "projectType": "web",
+  "framework": "react",
+  "testTypes": [
+    "functional",
+    "security",
+    "performance",
+    "ui",
+    "integration"
+  ],
+  "directories": {
+    "src": "./src",
+    "public": "./public",
+    "components": "./src/components",
+    "pages": "./src/pages",
+    "utils": "./src/utils"
+  },
+  "entryPoints": [
+    "./index.html",
+    "./src/main.jsx",
+    "./src/App.jsx"
+  ],
+  "testScope": {
+    "include": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "public/**/*.html",
+      "*.html"
+    ],
+    "exclude": [
+      "node_modules/**",
+      "dist/**",
+      "build/**",
+      "*.test.{js,jsx,ts,tsx}"
+    ]
+  },
+  "coverage": {
+    "threshold": 80,
+    "reportFormats": ["html", "json", "text"]
+  },
+  "execution": {
+    "timeout": 30000,
+    "retries": 2,
+    "parallel": true
+  }
+}

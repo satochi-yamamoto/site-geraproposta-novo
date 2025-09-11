@@ -1,0 +1,172 @@
+{
+  "tech_stack": [
+    "JavaScript",
+    "React 18",
+    "Vite",
+    "TailwindCSS",
+    "Radix UI",
+    "React Router DOM",
+    "jsPDF",
+    "html2pdf.js",
+    "Supabase",
+    "Framer Motion",
+    "Node.js",
+    "Docker",
+    "Nginx"
+  ],
+  "features": [
+    {
+      "name": "Unified App Router",
+      "description": "Main routing application that provides unified interface for document generation tools",
+      "files": [
+        "unified-app/src/App.jsx",
+        "unified-app/src/main.jsx",
+        "unified-app/src/components/Layout.jsx"
+      ]
+    },
+    {
+      "name": "Home Page",
+      "description": "Landing page showcasing all available document generation tools",
+      "files": [
+        "unified-app/src/pages/HomePage.jsx",
+        "index.html"
+      ]
+    },
+    {
+      "name": "Curriculum Generator Integration",
+      "description": "AI-powered curriculum/resume generator with multiple templates and PDF export",
+      "files": [
+        "unified-app/src/pages/CurriculumPage.jsx",
+        "unified-app/src/pages/curriculum/CurriculumGeneratorPage.jsx",
+        "unified-app/src/pages/curriculum/CurriculumResultPage.jsx",
+        "unified-app/src/components/curriculum/TagInput.jsx",
+        "microsaas-curriculo/src/App.jsx"
+      ]
+    },
+    {
+      "name": "Proposal Generator Integration",
+      "description": "Business proposal generator for MEIs and freelancers with customizable templates",
+      "files": [
+        "unified-app/src/pages/ProposalPage.jsx",
+        "unified-app/src/pages/proposal/ProposalGeneratorPage.jsx",
+        "unified-app/src/pages/proposal/ProposalResultPage.jsx",
+        "gerador-propostas-meis/src/App.jsx"
+      ]
+    },
+    {
+      "name": "App Configuration System",
+      "description": "Centralized configuration for managing integrated applications and their URLs",
+      "files": [
+        "unified-app/src/config/apps.js"
+      ]
+    },
+    {
+      "name": "Toast Notification System",
+      "description": "Global toast notification system for user feedback",
+      "files": [
+        "unified-app/src/contexts/ToastContext.jsx",
+        "unified-app/src/hooks/useToast.js",
+        "unified-app/src/components/ui/ToastContainer.jsx"
+      ]
+    },
+    {
+      "name": "UI Component Library",
+      "description": "Reusable UI components based on Radix UI and styled with TailwindCSS",
+      "files": [
+        "unified-app/src/components/ui/button.jsx",
+        "unified-app/src/components/ui/card.jsx",
+        "unified-app/src/components/ui/input.jsx",
+        "unified-app/src/components/ui/label.jsx",
+        "unified-app/src/components/ui/tabs.jsx",
+        "unified-app/src/components/ui/textarea.jsx",
+        "unified-app/src/components/ui/select.jsx"
+      ]
+    },
+    {
+      "name": "Header and Navigation",
+      "description": "Application header with navigation and branding",
+      "files": [
+        "unified-app/src/components/Header.jsx",
+        "unified-app/src/components/Footer.jsx"
+      ]
+    },
+    {
+      "name": "URL Validation and Redirect System",
+      "description": "Utilities for URL validation and app redirection management",
+      "files": [
+        "unified-app/src/hooks/useUrlValidator.js",
+        "unified-app/src/hooks/useRedirect.js",
+        "unified-app/src/components/AppRedirectPage.jsx"
+      ]
+    },
+    {
+      "name": "App Status Monitoring",
+      "description": "Components for monitoring and displaying application health status",
+      "files": [
+        "unified-app/src/components/AppStatusIndicator.jsx",
+        "unified-app/src/components/AppHealthCheck.jsx"
+      ]
+    },
+    {
+      "name": "Error Handling System",
+      "description": "Centralized error handling and logging utilities",
+      "files": [
+        "unified-app/src/lib/errorHandling.jsx",
+        "unified-app/src/lib/utils.js"
+      ]
+    },
+    {
+      "name": "Legal Pages",
+      "description": "Privacy policy and terms of service pages",
+      "files": [
+        "unified-app/src/pages/PrivacyPolicy.jsx",
+        "unified-app/src/pages/TermsOfService.jsx",
+        "politica-privacidade.html",
+        "termos-uso.html"
+      ]
+    },
+    {
+      "name": "PDF Generation Service",
+      "description": "PDF generation functionality for documents using jsPDF and html2pdf",
+      "files": [
+        "gerador-propostas-meis/src/lib/pdfGenerator.js",
+        "gerador-propostas-meis/src/lib/pdfGeneratorLazy.js"
+      ]
+    },
+    {
+      "name": "Supabase Authentication",
+      "description": "User authentication and database integration using Supabase",
+      "files": [
+        "microsaas-curriculo/src/contexts/SupabaseAuthContext.jsx",
+        "microsaas-curriculo/src/lib/customSupabaseClient.js",
+        "microsaas-curriculo/src/context/AuthContext.jsx"
+      ]
+    },
+    {
+      "name": "Analytics Integration",
+      "description": "Vercel Analytics and Speed Insights integration for performance monitoring",
+      "files": [
+        "unified-app/src/App.jsx"
+      ]
+    },
+    {
+      "name": "Docker Containerization",
+      "description": "Docker configuration for development and production deployment",
+      "files": [
+        "Dockerfile",
+        "Dockerfile.dev",
+        "docker-compose.yml",
+        "nginx.conf"
+      ]
+    },
+    {
+      "name": "SEO and Meta Management",
+      "description": "SEO optimization with structured data, meta tags, and sitemaps",
+      "files": [
+        "robots.txt",
+        "sitemap.xml",
+        "site.webmanifest"
+      ]
+    }
+  ]
+}
